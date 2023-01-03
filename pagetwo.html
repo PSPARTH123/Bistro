@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Payment Page</title>
+    <link rel="stylesheet" href="css/style2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-analytics.js"></script>
+</head>
+<body>
+    <header class="header">
+
+        <a href="#" class="logo"><i class="fas fa-utensils"></i> Bistro </a>
+    
+        <nav class="navbar">
+            <a href="index.html">home</a>
+            <a href="./index.html">about</a>
+            <a href="index.html">popular</a>
+            <a href="index.html">menu</a>
+            <a href="index.html">order</a>
+            <a href="index.html">blogs</a>
+        </nav>
+    
+        <div class="icons">;
+            <div id="menu-btn" class="fas fa-bars"></div>
+            <a href="./ShoppingCart.html" target="_blank"><div id="cart-btn" class="fas fa-shopping-cart"></div></a>
+            <div id="login-btn" class="fas fa-user"></div>
+        </div>
+    
+    </header>
+
+    <form action="action" id="sender">
+        <h1>Payment</h1>
+        <label for="name">Card Holder Name</label><br>
+        <input class="box1" type="text" name="name" id="name" placeholder="Enter Name"><br>
+        <label for="email">Phone Number</label><br>
+        <input class="box1" type="text" name="Phone" id="number" placeholder="Enter Phone Number"><br>
+        <label for="cardnum">Card Number</label><br>
+        <input class="box1" type="text" name="number" id="Cardnumber" placeholder="Enter Card Number"><br>
+        <div class="div1">
+            <label for="cardex">Card Expiry Date</label><br>
+            <input class="box2" type="month" name="month" id="month" placeholder="M"><br>   
+        </div>
+        <div class="div1">
+            <label for="cardyr">Card Expiry Year</label><br>
+            <input class="box2" type="year" name="year" id="year" placeholder="YYYY"><br>     
+        </div>
+        <div class="div1">
+            <label for="cardcvc">Card CVC</label><br>
+            <input class="box2" type="cvc" name="cvc" id="cvc" placeholder="CVC"><br>   
+        </div>
+        <center><div id="recaptcha-container"></div></center>
+        <center><button class="btn" onclick="validate()" type="button">Pay Now</button></center>
+        
+    </form>
+    <form action="action" id="verifier" style="display:none;">
+        <h1>Enter your OTP</h1>
+        <div>
+            <input type="text" class="box1" id="verificationcode" placeholder="OTP code">
+            <center><input type="button" id="verify" class="btn" value="Verify" onclick="codeverify()"></center>
+            <div class="p-conf" style="display:none;"><i class="fa fa-info-circle"></i>Number Verified</div>
+            <div class="n-conf" style="display:none;"><i class="fa fa-times-circle"></i>OTP ERROR</div>
+        </div>
+        </form>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+    <script src="./js/auth.js"></script>
+</body>
+</html>

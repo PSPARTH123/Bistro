@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="css/style1.css"/>
+    <title>MyCart</title>
+</head>
+
+<body>
+    <header class="header">
+
+        <a href="#" class="logo"><i class="fas fa-utensils"></i> Bistro </a>
+    
+        <nav class="navbar">
+            <a href="index.html">home</a>
+            <a href="./index.html">about</a>
+            <a href="index.html">popular</a>
+            <a href="index.html">menu</a>
+            <a href="index.html">order</a>
+            <a href="index.html">blogs</a>
+        </nav>
+    
+        <div class="icons">;
+            <div id="menu-btn" class="fas fa-bars"></div>
+            <!-- <div id="search-btn" class="fas fa-search"></div> -->
+            <a href="./ShoppingCart.html"><div id="cart-btn" class="fas fa-shopping-cart"></div></a>
+            <div id="login-btn" class="fas fa-user"></div>
+        </div>
+    
+    </header>
+
+    <section class="container content-section">
+        <h2 class="section-header" style="margin-top:120px;">My Bistro Cart</h2>
+        <div class="cart-row">
+            <span class="cart-item cart-header cart-column">ITEM</span>
+            <span class="cart-price cart-header cart-column">PRICE</span>
+            <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+        </div>
+        <div class="cart-items">
+        </div>
+        <div class="cart-total">
+            <strong class="cart-total-title">Total</strong>
+            <span class="cart-total-price">$0</span>
+        </div>
+        <button class="btn btn-primary btn-purchase" type="button">PURCHASE</button>
+    </section>
+</body>
+</html>
