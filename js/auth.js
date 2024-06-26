@@ -1,12 +1,6 @@
 
 const firebaseConfig = {
-    apiKey: "AIzaSyAPMse7iEZC8qyjWoijXHsQ1FmFK18c26E",
-    authDomain: "paymentgateway-f582a.firebaseapp.com",
-    projectId: "paymentgateway-f582a",
-    storageBucket: "paymentgateway-f582a.appspot.com",
-    messagingSenderId: "974996649796",
-    appId: "1:974996649796:web:9adcce33d86e8913028911",
-    measurementId: "G-KYR33JWEZV"
+    //FireBase API KEY
   };
 
     firebase.initializeApp(firebaseConfig);
