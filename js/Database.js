@@ -1,11 +1,5 @@
 const firebaseConfig = {
-    apiKey: "AIzaSyDucTSoZcsS8N6-HPGI85x5evs9ScEmi7c",
-    authDomain: "miniproject-7b6f6.firebaseapp.com",
-    databaseURL: "https://miniproject-7b6f6-default-rtdb.firebaseio.com",
-    projectId: "miniproject-7b6f6",
-    storageBucket: "miniproject-7b6f6.appspot.com",
-    messagingSenderId: "1936285328",
-    appId: "1:1936285328:web:35f1d18a150256c9304215"
+    //FireBASE API KEY
   };
 
 //---------------------------------------------------------------------------------//
